@@ -26,5 +26,10 @@
         "psr-4": {
             "Cz\\Markdown\\": "classes"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cz\\Markdown\\": "tests"
+        }
     }
 }
