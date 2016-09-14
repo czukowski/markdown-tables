@@ -54,6 +54,7 @@ class RSTTableBlockTraitTest extends Testcase
             ->will($this->returnArgument(0));
         $expected = implode("\n", $this->loadLinesFromFile($html, $from, $to));
         $block = $this->loadSectionFromNeonFile($neon, $section);
+        array_unshift($block, 'gridTable');
         $actual = $this->callObjectMethod('renderGridTable', [$block]);
         // Compare strings while ignoring whitespace differences before and after blocks.
         $this->assertEquals(trim($expected), trim($actual));
