@@ -198,11 +198,17 @@ trait RSTTableBlockTrait
      */
     private function renderRSTTableCellContent(array & $cell) {
         list (, , , $content) = $cell;
-        $parsedContent = $this->renderAbsy($this->parseBlocks($content));
-        if (count($content) === 1) {
-            return $parsedContent;
+        $blocks = $this->parseBlocks($content);
+        if (count($blocks) === 1) {
+            $block = reset($blocks);
+            if ( ! is_array($block)) {
+                return $block;
+            }
+            elseif (isset($block[0]) && isset($block['content']) && $block[0] === 'paragraph') {
+                return $this->renderAbsy($block['content']);
+            }
         }
-        return "\n\t\t\t\t".$parsedContent."\n\t\t\t";
+        return "\n\t\t\t\t".$this->renderAbsy($blocks)."\n\t\t\t";
     }
 
     abstract protected function parseBlocks($lines);
