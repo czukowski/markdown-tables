@@ -14,7 +14,7 @@ use RuntimeException;
 trait RSTTableBlockTrait
 {
     /**
-     * @var  string  Table attributes may be added here.
+     * @var  string  Table attributes may be added here (please include a leading space!).
      */
     public $gridTableAttributes = '';
     /**
@@ -151,7 +151,7 @@ trait RSTTableBlockTrait
         if ($body) {
             $content .= "\t<tbody>\n".$this->renderRSTTableBody($body, 'td')."\t</tbody>\n";
         }
-        return "<table {$this->gridTableAttributes}>\n$content</table>\n";
+        return "<table{$this->gridTableAttributes}>\n$content</table>\n";
     }
 
     /**
