@@ -1,0 +1,30 @@
+{
+    "name": "czukowski/markdown-tables",
+    "type": "library",
+    "description": "RST Grid Tables parser for cebe/markdown",
+    "keywords": ["markdown", "rst", "table", "grid"],
+    "homepage": "https://github.com/czukowski/markdown-tables",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Korney Czukowski",
+            "homepage": "http://это-я.com"
+        }
+    ],  
+    "support": {
+        "issues": "https://github.com/czukowski/markdown-tables/issues"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "cebe/markdown": "~1.1.0"
+    },
+    "require-dev": {
+        "nette/neon": "~2.2",
+        "phpunit/phpunit": "~4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cz\\Markdown\\": "classes"
+        }
+    }
+}

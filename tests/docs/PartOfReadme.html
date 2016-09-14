@@ -1,0 +1,58 @@
+<!--
+    Tests rely on the data to be positioned at certain line numbers, make sure to update tests
+    after updating this file!
+-->
+<html>
+
+<table>
+	<thead>
+		<tr>
+			<th>
+				[inner block: Header row, column 1
+(header rows optional)]
+			</th>
+			<th>
+				[inner block: Header 2
+]
+			</th>
+			<th>
+				[inner block: Header 3
+]
+			</th>
+			<th>
+				[inner block: Header 4
+]
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>[inner block: body row 1, column 1]</td>
+			<td>[inner block: column 2]</td>
+			<td>[inner block: column 3]</td>
+			<td>[inner block: column 4]</td>
+		</tr>
+		<tr>
+			<td>[inner block: body row 2]</td>
+			<td colspan="3">[inner block: Cells may span columns.]</td>
+		</tr>
+		<tr>
+			<td>[inner block: body row 3]</td>
+			<td rowspan="2">
+				[inner block: Cells may
+span rows.
+]
+			</td>
+			<td rowspan="2" colspan="2">
+				[inner block: - Table cells
+- contain
+- body elements.]
+			</td>
+		</tr>
+		<tr>
+			<td>[inner block: body row 4]</td>
+		</tr>
+	</tbody>
+</table>
+
+</html>

@@ -1,0 +1,77 @@
+oneCellOneLine:
+    - [37]
+    - []
+    - [[(0, 0, 1, ['A table with one cell and one line.'])]]
+
+tableTwoColumns:
+    - [14, 14]
+    - []
+    - [[(0, 0, 1, ['A table with']),
+        (0, 0, 1, ['two columns.'])]]
+
+tableTwoColumnsTwoRows:
+    - [14, 13]
+    - []
+    - [[(0, 0, 1, ['A table with']),
+        (0, 0, 1, ['two columns'])],
+       [(0, 0, 3, ['and']),
+        (0, 0, 3, ['two rows.'])]]
+
+tableTreeRowsTwoColumnsSpan:
+    - [12, 13]
+    - []
+    - [[(0, 1, 1, ['A table with three rows,']),
+        NULL],
+       [(0, 0, 3, ['and two']),
+        (0, 0, 3, ['columns.'])],
+       [(0, 1, 5, ['First and last rows', 'contain column spans.']),
+        NULL]]
+
+tableThreeColumnsTwoRowsSpan:
+    - [12, 13, 15]
+    - []
+    - [[(1, 0, 1, ['A table', 'with three', 'columns,']),
+        (0, 0, 1, ['two rows in']),
+        (1, 0, 1, ['and row spans', 'to left and', 'right.'])],
+       [NULL,
+        (0, 0, 3, ['the middle,']),
+        NULL]]
+
+tableWithFunnyStuff:
+    - [12, 13, 15]
+    - []
+    -  [[(1, 0, 1, ['A table |', 'with 3  +--', 'columns,']),
+         (0, 0, 1, ['two rows in']),
+         (1, 0, 1, [' and funny', '-+ stuff.', ' |'])],
+        [NULL,
+         (0, 0, 3, ['the middle,']),
+         NULL]]
+
+tableWithWhirlpool:
+    - [11, 13, 11]
+    - []
+    -  [[(1, 0, 1, ['W/NW cell', '', '']),
+         (0, 1, 1, ['N/NE cell']),
+         NULL],
+        [NULL,
+         (0, 0, 3, ['Middle cell']),
+         (1, 0, 3, ['E/SE cell', '', ''])],
+        [(0, 1, 5, ['S/SE cell']),
+         NULL,
+         NULL]]
+
+tableWithHeadSeparator:
+    - [12, 18]
+    - [[(0, 1, 1, ['A table with two header rows,']),
+        NULL],
+       [(0, 0, 3, ['the first']),
+        (0, 0, 3, ['with a span.'])]]
+    - [[(0, 0, 5, ['Two body']),
+        (0, 0, 5, ['rows,'])],
+       [(0, 1, 7, ['the second with a span.']),
+        NULL]]
+
+emptyTable:
+    - [37]
+    - []
+    - [[(0, 0, 1, [''])]]
