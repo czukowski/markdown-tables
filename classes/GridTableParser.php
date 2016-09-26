@@ -100,7 +100,7 @@ class GridTableParser extends RSTTableParser
         $this->headBodySep = $this->findHeadBodySep($this->block);
 
         for ($i = 0; $i < count($this->block); $i++) {
-            $this->block[$i] = $this->splitLine($this->block[$i]);
+            $this->block[$i] = $this->splitLine(rtrim($this->block[$i]));
         }
 
         $this->bottom = count($this->block) - 1;
