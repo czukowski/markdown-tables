@@ -6,7 +6,7 @@ namespace Cz\Markdown;
  * 
  * @author  czukowski
  */
-class GridTableParserTest extends Testcase
+class GridTableParserTest extends RSTTablesTestcase
 {
     /**
      * @dataProvider  provideSuccessfulParse

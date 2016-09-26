@@ -5,11 +5,11 @@ use Nette\Neon\Neon,
     ReflectionMethod;
 
 /**
- * Testcase
+ * RSTTablesTestcase
  * 
  * @author  czukowski
  */
-class Testcase extends PHPUnit_Framework_TestCase
+class RSTTablesTestcase extends PHPUnit_Framework_TestCase
 {
     protected $object;
 

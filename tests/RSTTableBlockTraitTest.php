@@ -8,7 +8,7 @@ namespace Cz\Markdown;
  * 
  * @property  RSTTableBlockTrait  $object
  */
-class RSTTableBlockTraitTest extends Testcase
+class RSTTableBlockTraitTest extends RSTTablesTestcase
 {
     /**
      * @dataProvider  provideIdentifyGridTable
