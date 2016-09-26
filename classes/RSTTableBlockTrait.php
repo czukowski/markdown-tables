@@ -47,7 +47,7 @@ trait RSTTableBlockTrait
             return FALSE;
         }
         // Calculate line width.
-        $width = strlen(trim($line));
+        $width = strlen(rtrim($line));
         // Calculate lines block bounds of the table.
         $start = $current;
         while ($this->checkGridTableLeftEdge($lines, $current)) {
@@ -65,8 +65,9 @@ trait RSTTableBlockTrait
         }
         // Check right edge and row width and return FALSE if anything's wrong.
         for ($i = $start; $i <= $end; $i++) {
-            if ( ! $this->checkGridTablePattern('right-edge', rtrim($lines[$i]))
-                || mb_strlen($lines[$i]) !== $width
+            $line = rtrim($lines[$i]);
+            if ( ! $this->checkGridTablePattern('right-edge', $line)
+                || mb_strlen($line) !== $width
             ) {
                 return FALSE;
             }
@@ -82,8 +83,7 @@ trait RSTTableBlockTrait
      */
     private function checkGridTableLeftEdge( & $lines, $current) {
         if (isset($lines[$current])) {
-            $trimmedLine = ltrim($lines[$current]);
-            return $trimmedLine && $this->checkGridTablePattern('left-edge', $trimmedLine);
+            return $lines[$current] && $this->checkGridTablePattern('left-edge', $lines[$current]);
         }
         return FALSE;
     }

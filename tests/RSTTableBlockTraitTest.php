@@ -37,6 +37,7 @@ class RSTTableBlockTraitTest extends Testcase
             ['MalformedTables.md', 0, FALSE, NULL],
             ['MalformedTables.md', 8, FALSE, NULL],
             ['MalformedTables.md', 16, FALSE, NULL],
+            ['TrailingSpaces.md', 0, TRUE, 7],
         ];
     }
 

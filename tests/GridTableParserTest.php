@@ -30,6 +30,7 @@ class GridTableParserTest extends Testcase
             ['RSTTests.md', 55, 63, 'RSTTests.neon', 'tableWithHeadSeparator'],
             ['RSTTests.md', 73, 75, 'RSTTests.neon', 'emptyTable'],
             ['PartOfReadme.md', 30, 41, 'PartOfReadme.neon', 'gridTablesExample'],
+            ['TrailingSpaces.md', 0, 7, 'TrailingSpaces.neon', 'trailingSpaces'],
         ];
     }
 

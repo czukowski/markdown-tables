@@ -1,0 +1,14 @@
+trailingSpaces:
+    - [14, 13]
+    - []
+    - [[(0, 0, 1, ['A table with']),
+        (0, 0, 1, ['two columns'])],
+       [(0, 0, 3, ['and']),
+        (0, 0, 3, ['three rows.'])],
+       [(0, 1, 5, ['and some spaces after', 'right-most edge']),
+        NULL]]
+
+indentedTable:
+    - []
+    - []
+    - []
