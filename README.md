@@ -53,7 +53,8 @@ The distribution is permitted under the MIT License. See LICENSE.md for details.
 
 
   [cebe/markdown]: https://github.com/cebe/markdown
-  [markdown-usage]: https://github.com/cebe/markdown#usage
+  [composer]: https://getcomposer.org/ 
   [docutils]: https://sourceforge.net/projects/docutils/
   [grid-tables]: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#grid-tables
+  [markdown-usage]: https://github.com/cebe/markdown#usage
   [simple-tables]: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#simple-tables
