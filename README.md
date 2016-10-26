@@ -46,6 +46,16 @@ $markdownExtraWithRSTTables = new MarkdownExtraWithRSTTables;
 
 For more information refer to the [original Readme file][markdown-usage].
 
+Known Issues
+------------
+
+If the tables seem broken, make sure a correct default encoding is set beforehand, for example:
+
+```php
+// Set default encoding to UTF-8.
+mb_internal_encoding('UTF-8');
+```
+
 License
 -------
 
